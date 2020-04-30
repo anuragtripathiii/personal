@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome</title>
+    <style>
+        .intro{
+            left: 3%;
+            position: absolute;
+            font-family:AppleSystemUIFont;
+            font-kerning: auto;
+            color: white;
+        }
+        .intro1{
+            left: 3%;
+            top: 55%;
+            position: absolute;
+            font-family:AppleSystemUIFont;
+            font-kerning: auto;
+            color: white;
+        }
+        body{
+            background:linear-gradient(to top,lightskyblue,violet);
+            background-repeat: no-repeat;
+            height:900px;
+        }
+        .flip-card{
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+            position: absolute;
+            top: 15%;
+            left: 15%;
+        }
+        .flip-card1{
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+            position: absolute;
+            top: 15%;
+            left: 65%;
+        }
+
+        .flip-card2{
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+            position: absolute;
+            top: 69%;
+            left: 10%;
+        }
+        .flip-card3{
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+            position: absolute;
+            top: 69%;
+            left: 40%;
+        }
+        .flip-card4{
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+            position: absolute;
+            top: 69%;
+            left: 70%;
+        }
+
+
+        .flip-card-inner{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .flip-card:hover .flip-card-inner{
+            transform: rotateY(540deg);
+        }
+        .flip-card1:hover .flip-card-inner{
+            transform: rotateY(540deg);}
+
+
+        .flip-card2:hover .flip-card-inner{
+            transform: rotateY(180deg);}
+
+        .flip-card4:hover .flip-card-inner{
+            transform: rotateY(180deg);}
+
+        .flip-card3:hover .flip-card-inner{
+            transform: rotateY(180deg);}
+        .flip-card-front, .flip-card-back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+        .flip-card-back {
+            background: linear-gradient(to bottom,lightskyblue,violet);
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+
+<h1 class="intro">Best Of <span style="color: black">"The Week!"</span></h1>
+
+<!--top card number 0-->
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="avatar.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+        </div>
+    </div>
+</div>
+
+
+<!--//top card 1-->
+
+<div class="flip-card1">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="avatar.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+        </div>
+    </div>
+</div>
+
+<!--//card 2-->
+<h1  class="intro1">Best Of<span style="color: black"> "The Day!"</span></h1>
+
+<div class="flip-card2">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="avatar.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+        </div>
+    </div>
+</div>
+<!-- card 3-->
+
+<div class="flip-card3">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="avatar.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+        </div>
+    </div>
+</div>
+<!--card 4-->
+
+<div class="flip-card4">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="avatar.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
