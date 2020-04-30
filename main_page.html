@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <title>anurag</title>
     <style>
-
         html{
             scroll-behavior: smooth;
-        }
+}
 
-
+body{
+    background-color: black;
+}
 
 .arrow{
     position: absolute;
@@ -46,6 +47,11 @@
 .arrow span:nth-child(3){
     animation-delay: -0.4s;
 }
+
+
+
+
+
         #mySidenav a {
             position: fixed;
             right: -50px;
@@ -88,22 +94,27 @@
             top: 75%;
             left: 45%;
             text-decoration: none;
-            color: black;
+            color: white;
             width: 100px;
-            border: 3px solid orange;
+            border: 3px solid #97ceff;
             padding: 12px;
             margin: 2px;
             text-align: center;
             border-radius: 5px;
-
-
+        }
+        .getstarted:hover{
+            border-bottom-left-radius: 50%;
+            border-top-right-radius:50%;
+            background-color: black;
+            transition: 0.4s;
+            color: red;
         }
         .anurag{
             font-size: 25px;
             top:-1%;
             position: absolute;
             text-decoration: none;
-            color: black;
+            color: white;
             letter-spacing: 3px;
         }
         .tag{
@@ -111,7 +122,7 @@
             top: 43%;
             left: 38%;
             text-decoration: none;
-            color: black;
+            color: white;
             font-size: 50px;
         }
         .description{
@@ -119,30 +130,108 @@
             top: 58%;
             left: 38%;
             text-decoration: none;
-            color: black;
+            color: white;
             font-size: 20px;
 
         }
-        .section01{
-            height: 805px;
-            width: 1452px;
-            top: -2%;
-            overflow: hidden;
-            position: absolute;
-            padding-right:0;
-            left:0%;
-            background-image: linear-gradient(to top, lightcoral , lightskyblue);
+
+
+        @media only screen and (max-width: 532px){
+            .tag{
+                font-size: 40px;
+                left: 20%;
+            }
+        .description{
+            left: 10%;
         }
+        .getstarted{
+            left: 28%;
+        }
+        }
+
+        .ball {
+            background: linear-gradient(to bottom,lightskyblue,violet);
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            position: relative;
+            margin: 60px auto auto auto;
+            text-align: center;
+
+        }
+        .ball1 {
+            background: linear-gradient(to bottom,lightskyblue,violet);
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            margin-left: 30% ;
+            top:8%;
+            position: absolute;
+        }
+        .ball2 {
+            background: linear-gradient(to bottom,lightskyblue,violet);
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            margin-left:70% ;
+            margin-top: -3.5%;
+
+        }
+        .ball:hover{
+            background: linear-gradient(to bottom,violet,lightskyblue);
+            width: 90px;
+            position: absolute;
+            height: 90px;
+        }
+
+
+        .ball1:hover{
+            background: linear-gradient(to bottom,violet,lightskyblue);
+            width: 90px;
+            position: absolute;
+            height: 90px;
+        }
+        .ball2:hover{
+            background: linear-gradient(to bottom,violet,lightskyblue);
+            width: 90px;
+            position: absolute;
+            height: 90px;
+        }
+        @keyframes bounce {
+        0% { transform: translateY(620px); }
+        100% { transform: translateY(-200px); }
+
+        }
+        .ball2 {
+            animation: bounce 6.8s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+
+
+        .ball1 {
+            animation: bounce 6s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+
+
+        .ball {
+            animation: bounce 6.5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+
 
 
     </style>
 
 </head>
 <body>
-
-
-<div>
-<div class="section01"></div>
+<div class="boy">
+    <div class="ball"></div>
+    <div class="ball1"></div>
+    <div class="ball2"></div>
 <div id="mySidenav">
     <a href="login.html" id="Signin">Sign In </a>
     <a href="#" id="option">Option</a>
@@ -155,21 +244,22 @@
     <p class="tag">Are You Ready?</p>
 <p class="description"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; you are almost done!!
       <br> <br>we will have a great experience together!</p>
-<div class="arrow">
+<div class="arrow" onclick="myfunc()">
+
     <a href="#section02">
         <span></span>
     <span></span>
     <span></span>
     </a>
-</div>
-</div>
+</div></div>
 
+<script>
 
-<div id="section02">gmk</div>
+function myfunc() {
+    alert("HOLA!! still working on it. \n dont worry, it will be here soon.");
 
-
-
-
-
+}
+</script>
+<span style="color: red;position:absolute;top: 97.5%;right: 1%"> made with ❤ &copy; anurag️</span>
 </body>
 </html>
