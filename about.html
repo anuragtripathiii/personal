@@ -7,7 +7,7 @@
         body{
             background: linear-gradient(to top,lightskyblue,violet);
             background-repeat: no-repeat;
-            height: 850px;
+            height: 1000px;
         }
         .card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -17,6 +17,13 @@
             height: 520px;
             font-family: arial;
         }
+        .copyright{
+            color: red;
+            position:absolute;
+            top: 97%;
+            right: 1%
+        }
+
 
         .title {
             color: grey;
@@ -46,6 +53,14 @@
             font-size: 30px;
             color: red;
         }
+        @media only screen and (max-width: 600px) {
+            .copyright{
+                top: 97%;
+
+            }
+
+
+        }
 
     </style>
 </head>
@@ -71,7 +86,7 @@
     <p>it was the simple idea that clicked me and it all began.</p>
 
 </div>
-<span style="color: red;position:absolute;top: 97%;right: 1%"> made with &heartsuit; &copy;Anurag</span>
+<span class="copyright">made with &heartsuit; &copy;Anurag</span>
 </body>
 </html>
 
