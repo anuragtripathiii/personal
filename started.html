@@ -107,8 +107,75 @@
             color: white;
             transform: rotateY(180deg);
         }
+        .image{
+            width:300px;
+            height:300px;
+        }
+
+@media only screen and (max-width: 1022px) {
+
+    .flip-card {
+        width: 200px;
+        height: 200px;
+        perspective: 1000px;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
 
 
+    .flip-card1 {
+        width: 200px;
+        height: 200px;
+        perspective: 1000px;
+        position: absolute;
+        top: 25%;
+        left: 55%;
+    }
+
+    .image {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 1022px) {
+
+    body {
+        height: 1500px;
+    }
+    .image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .flip-card2 {
+        width: 200px;
+        height: 200px;
+        perspective: 1000px;
+        position: absolute;
+        top: 69%;
+        left: 10%;
+    }
+
+    .flip-card3 {
+        width: 200px;
+        height: 200px;
+        perspective: 1000px;
+        position: absolute;
+        top: 103%;
+        left: 10%;
+    }
+
+    .flip-card4 {
+        width: 200px;
+        height: 200px;
+        perspective: 1000px;
+        position: absolute;
+        top: 140%;
+        left: 10%;
+    }
+
+}
 
     </style>
 </head>
@@ -121,7 +188,7 @@
 <div class="flip-card">
     <div class="flip-card-inner">
         <div class="flip-card-front">
-            <img src="avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="icon.png" alt="Avatar" class="image">
         </div>
         <div class="flip-card-back">
             <h1>John Doe</h1>
@@ -137,7 +204,7 @@
 <div class="flip-card1">
     <div class="flip-card-inner">
         <div class="flip-card-front">
-            <img src="avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="icon.png" alt="Avatar" class="image">
         </div>
         <div class="flip-card-back">
             <h1>John Doe</h1>
@@ -147,13 +214,15 @@
     </div>
 </div>
 
+
 <!--//card 2-->
+
 <h1  class="intro1">Best Of<span style="color: black"> "The Day!"</span></h1>
 
 <div class="flip-card2">
     <div class="flip-card-inner">
         <div class="flip-card-front">
-            <img src="avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="icon.png" alt="Avatar" class="image">
         </div>
         <div class="flip-card-back">
             <h1>John Doe</h1>
@@ -162,26 +231,28 @@
         </div>
     </div>
 </div>
+
 <!-- card 3-->
 
 <div class="flip-card3">
     <div class="flip-card-inner">
         <div class="flip-card-front">
-            <img src="avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="icon.png" alt="Avatar" class="image">
         </div>
         <div class="flip-card-back">
-            <h1>John Doe</h1>
-            <p>Architect & Engineer</p>
+            <h1>ANU RAG</h1>
+            <p>Student & Developer</p>
             <p>We love that guy</p>
         </div>
     </div>
 </div>
+
 <!--card 4-->
 
 <div class="flip-card4">
     <div class="flip-card-inner">
         <div class="flip-card-front">
-            <img src="avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            <img src="icon.png" alt="Avatar" class="image">
         </div>
         <div class="flip-card-back">
             <h1>John Doe</h1>
