@@ -6,55 +6,83 @@
     <meta charset="UTF-8">
     <title>anurag</title>
     <style>
+
+        footer{
+            margin-top: 300px;
+            background: #021428;
+            height: 100px;
+            color: white;
+            width: 102%;
+            margin-left: -1%;
+            margin-right: -1%;
+            position: absolute;
+            top: 63%;
+        }
+
+        #footer-text{
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .heart{
+            color:#e25555;
+        }
+        .span{
+            text-align: center;
+        }
+
+
+
+
         html{
             scroll-behavior: smooth;
-}
+        }
 
-body{
-    scroll-behavior: smooth;
-    width: auto;
-    position: relative;
-    margin-top:-4.5%;
-    background:linear-gradient(to bottom,black,lightskyblue);
-    background-repeat: no-repeat;
-    height: 790px;
-}
+        body{
+            scroll-behavior: smooth;
+            width: auto;
+            position: relative;
+            margin-top:-4.5%;
+            background:linear-gradient(to bottom,black,lightskyblue);
+            background-repeat: no-repeat;
+            height: 790px;
+        }
 
-.arrow{
-    position: absolute;
-    top:90%;
-    left: 50%;
-}
-.arrow span{
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 2px solid red;
-    border-right: 2px solid red;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: anurag 2s infinite;
-}
-@keyframes anurag  {
-    0%{
-        opacity: 0%;
-        transform: rotate(45deg) translate(-15px,-15px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(12px,12px);
-    }
+        .arrow{
+            position: absolute;
+            top:90%;
+            left: 50%;
+        }
+        .arrow span{
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-bottom: 2px solid red;
+            border-right: 2px solid red;
+            transform: rotate(45deg);
+            margin: -10px;
+            animation: anurag 2s infinite;
+        }
+        @keyframes anurag  {
+            0%{
+                opacity: 0%;
+                transform: rotate(45deg) translate(-15px,-15px);
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+                transform: rotate(45deg) translate(12px,12px);
+            }
 
-}
-.arrow span:nth-child(2){
-    animation-delay: -0.2s;
-}
-.arrow span:nth-child(3){
-    animation-delay: -0.4s;
-}
+        }
+        .arrow span:nth-child(2){
+            animation-delay: -0.2s;
+        }
+        .arrow span:nth-child(3){
+            animation-delay: -0.4s;
+        }
 
 
 
@@ -136,7 +164,7 @@ body{
         .description{
             position: absolute;
             top: 58%;
-            left: 38%;
+            left: 47%;
             text-decoration: none;
             color: white;
             font-size: 20px;
@@ -144,22 +172,22 @@ body{
         }
 
 
-       @media only screen and (max-width: 532px){
+        @media only screen and (max-width: 532px){
             .tag{
                 font-size: 40px;
                 left: 15%;
             }
-        .description{
-            left: 37%;
-            top: 53%;
-        }
-        .getstarted{
-            left: 30%;
-            top:65%;
-        }
-        .arrow{
-            top: 77%;
-        }
+            .description{
+                left: 37%;
+                top: 53%;
+            }
+            .getstarted{
+                left: 30%;
+                top:65%;
+            }
+            .arrow{
+                top: 77%;
+            }
 
         }
 
@@ -193,8 +221,8 @@ body{
 
         }
         @keyframes bounce {
-        0% { transform: translateY(620px); }
-        100% { transform: translateY(-200px); }
+            0% { transform: translateY(620px); }
+            100% { transform: translateY(-200px); }
 
         }
         .ball2 {
@@ -227,34 +255,41 @@ body{
     <div class="ball"></div>
     <div class="ball1"></div>
     <div class="ball2"></div>
-<div id="mySidenav">
-    <a href="login.html" id="Signin">Sign In </a>
-    <a href="#" id="option">Option</a>
-    <a href="contact.html" id="contact">Contact</a>
-    <a href="about.html" id="about">About</a>
-</div>
+    <div id="mySidenav">
+        <a href="login.html" id="Signin">Sign In </a>
+        <a href="#" id="option">Option</a>
+        <a href="contact.html" id="contact">Contact</a>
+        <a href="about.html" id="about">About</a>
+    </div>
 
-<a href="started.html"><b class="getstarted">Get Started</b></a>
-<a href="#"><p class="anurag">ANURAG</p></a>
+    <a href="started.html"><b class="getstarted">Get Started</b></a>
+    <a href="#"><p class="anurag">ANURAG</p></a>
     <p class="tag">Are You Ready?</p>
-<p class="description"> 
-    <br> <strong>Jump in!!!</strong></p>
-<div class="arrow" onclick="myfunc()">
+    <p class="description">
+        <br> <strong>Jump in!!!</strong></p>
+    <div class="arrow" onclick="myfunc()">
 
-    <a href="#section02">
-        <span></span>
-    <span></span>
-    <span></span>
-    </a>
-</div></div>
+        <a href="#section02">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div></div>
 
 <script>
 
-function myfunc() {
-    alert("HOLA!! still working on it. \n dont worry, it will be here soon.");
+    function myfunc() {
+        alert("HOLA!! still working on it. \n dont worry, it will be here soon.");
 
-}
+    }
 </script>
+
+<footer>
+
+    <p id="footer-text">Copyright &copy; Anurag.tripathii</p>
+    <p class="span">Made with <span class="heart">❤</span> by Anurag Tripathi</p>
+
+</footer>
 
 </body>
 </html>
