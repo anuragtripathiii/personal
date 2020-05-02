@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <title>anurag</title>
+    <style>
+        #page2{
+            top: 100%;
+            position: absolute;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body {
+            scroll-behavior: smooth;
+            width: auto;
+            position: relative;
+            margin-top: -4.5%;
+            background: linear-gradient(to top,black,black);
+            background-repeat: no-repeat;
+            height: 850px;
+        }
+
+        .arrow{
+            position: absolute;
+            top:88%;
+            left: 50%;
+        }
+        .arrow span{
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-bottom: 2px solid red;
+            border-right: 2px solid red;
+            transform: rotate(45deg);
+            margin: -10px;
+            animation: anurag 2s infinite;
+        }
+        @keyframes anurag  {
+            0%{
+                opacity: 0%;
+                transform: rotate(45deg) translate(-15px,-15px);
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+                transform: rotate(45deg) translate(12px,12px);
+            }
+
+        }
+        .arrow span:nth-child(2){
+            animation-delay: -0.2s;
+        }
+        .arrow span:nth-child(3){
+            animation-delay: -0.4s;
+        }
+
+
+
+
+
+        #mySidenav a {
+            position: fixed;
+            right: -50px;
+            transition: 0.4s;
+            padding: 13px;
+            width: 100px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            border-radius: 5px 0px 0px 5px;
+        }
+
+        #mySidenav a:hover {
+            right: 0;
+        }
+
+        #Signin {
+            top: 40px;
+            background-color: cadetblue;
+            position: absolute;
+        }
+
+        #option {
+            top: 100px;
+            background-color: #2196F3;
+        }
+
+        #contact {
+            top: 160px;
+            background-color: #f44336;
+        }
+
+        #about {
+            top: 220px;
+            background-color: #555
+        }
+
+
+        .getstarted{
+            position: absolute;
+            top: 74%;
+            left: 46%;
+            text-decoration: none;
+            color: white;
+            width: 100px;
+            border: 3px solid #97ceff;
+            padding: 12px;
+            margin: 2px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .getstarted:hover{
+            border-bottom-left-radius: 50%;
+            border-top-right-radius:50%;
+            background-color: black;
+            transition: 0.4s;
+            color: red;
+        }
+        .anurag{
+            font-size: 25px;
+            top:2%;
+            position: absolute;
+            text-decoration: none;
+            color: white;
+            letter-spacing: 3px;
+        }
+        .tag{
+            position: absolute;
+            top: 43%;
+            left: 38%;
+            text-decoration: none;
+            color: white;
+            font-size: 50px;
+        }
+        .description{
+            position: absolute;
+            top: 58%;
+            left: 47%;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+
+        }
+
+
+        @media only screen and (max-width: 532px){
+            .tag{
+                font-size: 40px;
+                left: 15%;
+
+            }
+            .description{
+                left: 37%;
+                top: 53%;
+            }
+            .getstarted{
+                left: 30%;
+                top:65%;
+            }
+            .arrow{
+                top: 77%;
+            }
+            .anurag{
+                top: 4%;
+            }
+
+        }
+
+
+        .ball {
+            background: linear-gradient(to bottom,lightskyblue,violet);
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            position: relative;
+            margin: 60px auto auto auto;
+            text-align: center;
+
+        }
+        .ball1 {
+            background: linear-gradient(to bottom,lightskyblue,violet);
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            margin-left: 30% ;
+            top:8%;
+            position: center;
+        }
+        .ball2 {
+            background: linear-gradient(to bottom,lightskyblue,violet);
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            margin-left:70% ;
+            margin-top: -3.5%;
+
+        }
+        @keyframes bounce {
+            0% { transform: translateY(620px); }
+            100% { transform: translateY(-200px); }
+
+        }
+        .ball2 {
+            animation: bounce 6.8s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+
+
+        .ball1 {
+            animation: bounce 6s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+
+
+        .ball {
+            animation: bounce 6.5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        /*page2*/
+        .bg2{
+            background: linear-gradient(148deg, black 90%,lightcoral 90%);
+            height: 870px;
+            position: absolute;
+            width: 102%;
+            overflow: hidden;
+            margin-top: 0%;
+            margin-right: -1%;
+            margin-left: -1%;
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+<div class="ball"></div>
+<div class="ball1"></div>
+<div class="ball2"></div>
+<button type="button"><a href="main_page.html">day mode</a></button>
+
+<div id="mySidenav">
+    <a href="DARKlogin.html" id="Signin">Sign In </a>
+    <a href="#" id="option"  onclick="myfunc()">Option</a>
+    <a href="DARKcontact.html" id="contact">Contact</a>
+    <a href="DARKabout.html" id="about">About</a>
+</div>
+
+<a href="DARKstarted.html"><b class="getstarted">Get Started</b></a>
+<a href="#"><p class="anurag">
+    <span style="color:#FF0000">A</span>
+    <span style="color:#66CC66">N</span>
+    <span style="color:#FF9966">U</span>
+    <span style="color:#FFCCCC">R</span>
+    <span style="color:#FF0066">A</span>
+    <span style="color:greenyellow">G</span></p>
+</a>
+<p class="tag">
+    <span style="color:lightskyblue">Are</span>
+    <span style="color:lightcoral">You</span>
+    <span style="color:orange">Ready</span>
+    <span style="color:#FF0066">?</span>
+</p>
+<p class="description">
+    <br> <strong>Jump in!!!</strong></p>
+<div class="arrow">
+
+    <a href="#page2">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+</div>
+</div>
+
+
+<div>
+    <div id="page2" class="bg2">
+
+    </div>
+
+</div>
+</body>
+</html>

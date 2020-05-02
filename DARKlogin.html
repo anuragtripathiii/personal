@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>sign up</title>
+    <style>
+        .bg{
+
+            background-repeat: no-repeat;
+            width: 1440px;
+            height:900px;
+            margin-top: -9px;
+            margin-left: -8px;
+            margin-bottom: -10px;
+            background:linear-gradient(to bottom, black , black);
+        }
+        .loginbox{
+            position: absolute;
+            top: 35%;
+            left: 10%;
+            width: 380px;
+            height: 300px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            background-image: linear-gradient(to bottom,gray,black);
+            overflow: hidden;
+            border-color: red;
+        }
+        .middleborder{
+            height: 300px;
+            position: absolute;
+            top: 35%;
+            left: 45%;
+            border: 1px solid white;
+        }
+        .log_email{
+            width: 320px;
+            position: absolute;
+            height: 37px;
+            left: 20px;
+            border-radius: 5px;
+            top: 40%;
+            color: gray;
+            font-size: 15px;
+            border-color: transparent;
+        }
+        .log_pass{
+            border-color: transparent;
+            width: 320px;
+            position: absolute;
+            height: 37px;
+            left: 20px;
+            top: 60%;
+            border-radius: 5px;
+            color: gray;
+            font-size: 15px;
+        }
+        .log_btn{
+            border-color: transparent;
+            width: 320px;
+            position: absolute;
+            height: 40px;
+            left: 20px;
+            top: 80%;
+            border-radius: 5px;
+            color: white;
+            font-size: 15px;
+            background-color: orange;
+        }
+        .log_btn:hover{
+            opacity: 70%;
+            color: black;
+        }
+        .extra{
+            position: absolute;
+            left: 6%;
+            color: white;
+        }
+        .extra1{
+            position: absolute;
+            left: 6%;
+            color: white;
+            top: 14%;
+            font-size: 20px;
+        }
+        .signupbox{
+            position: absolute;
+            top: 35%;
+            left: 54%;
+            width: 380px;
+            height: 380px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            background-image: linear-gradient(to bottom,gray,black);
+            overflow: hidden;
+            border-color: red;
+        }
+        .signup{
+            width: 320px;
+            position: absolute;
+            height: 37px;
+            left: 22px;
+            border-radius: 5px;
+            top: 36%;
+            color: gray;
+            font-size: 15px;
+            border-color: transparent;
+        }
+        .signup1{
+            width: 320px;
+            position: absolute;
+            height: 37px;
+            left: 20px;
+            border-radius: 5px;
+            top: 54%;
+            color: gray;
+            font-size: 15px;
+            border-color: transparent;
+        }
+        .signup2{
+            width: 320px;
+            position: absolute;
+            height: 37px;
+            left: 20px;
+            border-radius: 5px;
+            top: 71%;
+            color: gray;
+            font-size: 15px;
+            border-color: transparent;
+        }
+        .signup3{
+
+            width: 320px;
+            position: absolute;
+            height: 37px;
+            left: 25px;
+            border-radius: 5px;
+            top: 86%;
+            color: white;
+            font-size: 15px;
+            border-color: transparent;
+            background-color: orange;
+        }
+        .extra3{
+            position: absolute;
+            left: 6%;
+            color: white;
+        }
+        .extra4{
+            position: absolute;
+            left: 6%;
+            color: white;
+            top: 14%;
+            font-size: 20px;
+        }
+        .signup3:hover{
+            opacity: 70%;
+            color: black;
+        }
+
+        /*  @media only screen and (max-width :1115px) {
+              .middleborder{
+                  transform:rotate(90deg);
+                  top:28%;
+                  left: 28%;
+              }
+              .loginbox{
+                  top: 5%;
+              }
+              .signupbox{
+                  top: 50%;
+                  left: 10%;
+              }
+          }
+          @media  only screen and (max-width:584px) {
+              .middleborder{
+                  left: 50%;
+              }
+              .bg{
+                  height: 1500px;
+              }
+              .signupbox{
+                  top: 50%;
+              }
+          }*/
+        @media only screen and (max-width: 1150px) {
+            .bg
+            {
+                height: 950px;
+            }
+            .loginbox{
+                top: 10%;
+            }
+            .middleborder {
+                top: 17%;
+                transform: rotate(90deg);
+                top: 37%;
+                left: 28%;
+                position: absolute;
+            }
+            .signupbox{
+                top:65% ;
+                left: 10%;
+            }
+
+        }
+        @media only screen and (max-width: 800px){
+            .middleborder{
+                left: 50%;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+<div class="bg">
+
+    <div class="loginbox">
+        <h2 class="extra">Secure Log in!</h2>
+        <p class="extra1">Enter Credentials to continue</p>
+        <input class="log_email" type="email" placeholder="enter email"><br>
+        <input class="log_pass" type="password" placeholder="password"><br>
+        <button class="log_btn" type="submit">Sign in!</button>
+    </div>
+    <span class="middleborder"></span>
+    <div class="signupbox">
+        <h2 class="extra3">Secure Sign Up!</h2>
+        <p class="extra4">Enter Credentials to continue</p>
+        <input class="signup" type="text" placeholder="full name">
+        <input  class="signup1" type="email" placeholder="email">
+        <input class="signup2" type="password" placeholder="password">
+        <button class="signup3" type="submit">submit</button>
+    </div>
+
+</div>
+</body>
+</html>
