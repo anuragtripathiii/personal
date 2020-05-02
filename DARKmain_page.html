@@ -247,6 +247,73 @@
             color: white;
 
         }
+        footer{
+            position: relative;
+            top: 185.7%;
+            margin-top: 0px;
+            background: #021428;
+            width: 102%;
+            height: 200px;
+            color: white;
+            margin-left: -1%;
+            margin-right: -1%;
+        }
+
+        #footer-text{
+            line-height: 10;
+            text-align: center;
+        }
+
+        .heart{
+            color:#e25555;
+        }
+        .span{
+            text-align: center;
+        }
+        .share{
+            position: absolute;
+            top: 2%;
+            right: 2%;
+        }
+        .counter{
+            position: absolute;
+            color: #2196F3;
+            top: 15%;
+            left: 46%;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            position:absolute;
+            width: 50%;
+            left:25%;
+            top: 20%;
+            border: 1px solid #ddd;
+        }
+        .table1 {
+            border-collapse: collapse;
+            border-spacing: 0;
+            position:absolute;
+            width: 50%;
+            left:25%;
+            top: 50%;
+            border: 1px solid #ddd;
+        }
+
+
+        th, td {
+            text-align: left;
+            padding: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightskyblue;
+        }
+        tr:nth-child(odd){
+            background-color: violet;
+        }
+
 
 
 
@@ -297,9 +364,77 @@
 
 <div>
     <div id="page2" class="bg2">
+        <h2 style="text-align: center;top: 10%;position: relative;color: white">Top Performer</h2>
+        <table>
+            <tr style="background: linear-gradient(to right,lightskyblue,violet)">
+                <th> Name</th>
+                <th>Email</th>
+                <th>Giveaway</th>
+            </tr>
+            <tr style="background-color: cadetblue">
+                <td>dummy</td>
+                <td>dummy</td>
+                <td>dummy</td>
+            </tr>
+        </table>
+
+        <table class="table1">
+            <h2 style="text-align: center;top: 35%;position: relative;color: white">Latest Winner's</h2>
+
+
+            <tr style="background: linear-gradient(to right,lightskyblue,violet)">
+                <th> Name</th>
+                <th>Email</th>
+                <th>Giveaway</th>
+            </tr>
+            <tr>
+                <td>dummy</td>
+                <td>dummy</td>
+                <td>dummy</td>
+            </tr>
+            <tr>
+                <td>dummy</td>
+                <td>dummy</td>
+                <td>dummy</td>
+            </tr>
+            <tr>
+                <td>dummy</td>
+                <td>dummy</td>
+                <td>dummy</td>
+            </tr>
+        </table>
 
     </div>
 
 </div>
+<script>
+
+    function myfunc() {
+        alert("HOLA!! still working on it. \n dont worry, it will be here soon.");
+    }
+
+    function myfunc2() {
+        alert("It's still in beta testing may not work properly")
+    }
+
+
+</script>
+<footer>
+    <a><img  class="counter" src="https://www.webfreecounter.com/hit.php?id=gruakxcf&nd=6&style=10"></a>
+
+    <p id="footer-text">Copyright &copy; anurag.tripathii</p>
+    <p class="span">Made with <span class="heart">❤</span> by Anurag Tripathi</p>
+
+
+    <!-- AddToAny BEGIN -->
+    <div class="a2a_kit a2a_kit_size_32 a2a_default_style share">
+        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+        <a class="a2a_button_facebook"></a>
+        <a class="a2a_button_whatsapp"></a>
+        <a class="a2a_button_copy_link"></a>
+    </div>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <!-- AddToAny END -->
+</footer>
 </body>
 </html>
