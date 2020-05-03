@@ -335,7 +335,7 @@
         }
         .feedback{
             position: absolute;
-            top: 0%;
+            top: 10%;
             color: red;
             left: 20%;
             text-decoration:none ;
@@ -357,7 +357,7 @@
 
 <div id="mySidenav">
     <a href="DARKlogin.html" id="Signin">Sign In </a>
-    <a href="#" id="option"  onclick="myfunc()">Option</a>
+    <a href="#" id="option"  onclick="myFunction()">Feedback</a>
     <a href="DARKcontact.html" id="contact">Contact</a>
     <a href="DARKabout.html" id="about">About</a>
 </div>
@@ -443,6 +443,9 @@
 
     function myfunc2() {
         alert("It's still in beta testing may not work properly")
+    }
+    function myFunction() {
+        window.open("https://forms.gle/YFLQbMzCGRvZaVwy7");
     }
 
 
