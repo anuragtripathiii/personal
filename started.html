@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/fe1dc7696d.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/ccaffbd9f3.js"></script>
     <meta charset="UTF-8">
     <title>welcome</title>
     <style>
@@ -22,7 +28,7 @@
         body{
             background:linear-gradient(to top,lightskyblue,violet);
             background-repeat: no-repeat;
-            height:1000px;
+            height:900px;
         }
         .flip-card{
             width: 300px;
@@ -110,6 +116,11 @@
         .image{
             width:300px;
             height:300px;
+        }
+        .faq{
+            position: absolute;
+            top: 5%;
+            right: 1%;
         }
 
 @media only screen and (max-width: 1022px) {
@@ -219,7 +230,6 @@
             body{
                 height: 1800px;
             }
-            
         }
 
 
@@ -238,9 +248,9 @@
             <img src="icon.png" alt="Avatar" class="image">
         </div>
         <div class="flip-card-back">
-            <h1>John Doe</h1>
-            <p>Architect & Engineer</p>
-            <p>We love that guy</p>
+            <h1>contest #1</h1>
+            <p>Contest ends in 6 Days<br>winner will be announced on 18 may 2020</p>
+            <button type="button" class="btn btn-primary">Enter Contest</button>
         </div>
     </div>
 </div>
@@ -254,9 +264,9 @@
             <img src="icon.png" alt="Avatar" class="image">
         </div>
         <div class="flip-card-back">
-            <h1>John Doe</h1>
-            <p>Architect & Engineer</p>
-            <p>We love that guy</p>
+            <h1>contest #2</h1>
+            <p>Contest ends in 6 Days<br>winner will be announced on 18 may 2020</p>
+            <button type="button" class="btn btn-primary">Enter Contest</button>
         </div>
     </div>
 </div>
@@ -272,9 +282,9 @@
             <img src="icon.png" alt="Avatar" class="image">
         </div>
         <div class="flip-card-back">
-            <h1>John Doe</h1>
-            <p>Architect & Engineer</p>
-            <p>We love that guy</p>
+            <h1>contest #3</h1>
+            <p>Contest ends in 6 Days<br>winner will be announced on 18 may 2020</p>
+            <button type="button" class="btn btn-primary">Enter Contest</button>
         </div>
     </div>
 </div>
@@ -287,9 +297,9 @@
             <img src="icon.png" alt="Avatar" class="image">
         </div>
         <div class="flip-card-back">
-            <h1>ANU RAG</h1>
-            <p>Student & Developer</p>
-            <p>We love that guy</p>
+            <h1>contest #4</h1>
+            <p>Contest ends in 6 Days<br>winner will be announced on 18 may 2020</p>
+            <button type="button" class="btn btn-primary">Enter Contest</button>
         </div>
     </div>
 </div>
@@ -302,11 +312,34 @@
             <img src="icon.png" alt="Avatar" class="image">
         </div>
         <div class="flip-card-back">
-            <h1>John Doe</h1>
-            <p>Architect & Engineer</p>
-            <p>We love that guy</p>
+            <h1>contest #5</h1>
+            <p>Contest ends in 6 Days<br>winner will be announced on 18 may 2020</p>
+            <button type="button" class="btn btn-primary">Enter Contest</button>
         </div>
     </div>
 </div>
+
+<div class="btn-group dropleft float-right">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        What to do?
+    </button>
+    <div class="dropdown-menu dropdown-menu-left bg-light" style="color: black">
+        <a style="width: 310px" class="dropdown-item">Hey!!!<br>1. Click on the card/s which you want. <br>2.Hit enter contest<br>3. That's it? Well Yes!!<br>4.Wait till  we announce winner's.</a>
+
+    </div>
+</div>
+
+
+<div class="btn-group dropleft floatleft faq" style="top: 10%">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQ's
+    </button>
+    <div class="dropdown-menu dropdown-menu-right" style="color: black">
+        <a style="width: 440px" class="dropdown-item">1.winner's will be informed via email or contact<br>2.Winner's email will be published on the site<br>3.Winner will have to claim his/her rewards within a week.<br>4.enter in multiple contest to increase the chance.<br>5.Amount will be transfered as per winner's convenience,<br>bank transfer or any other payment method.</a>
+
+    </div>
+</div>
+
+
+
 </body>
 </html>
